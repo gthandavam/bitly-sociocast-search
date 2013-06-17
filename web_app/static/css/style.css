@@ -1,0 +1,185 @@
+/* 
+Project Name: Blank Template
+Client: Your Client
+Author: Your Name
+Developer @GA in NYC
+*/
+
+
+/******************************************
+/* SETUP                   
+/*******************************************/
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+.alignright {
+	float: right; 
+	padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+	float: left; 
+	padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES                   
+/*******************************************/
+
+body {
+     color: #000;
+     font-size: 12px;
+     line-height: 1.4;
+     font-family: Helvetica, Arial, sans-serif;
+     background-color: #444;
+}
+
+
+/******************************************
+/* LAYOUT                   
+/*******************************************/
+
+/* Center the container */
+#container {
+	width: 960px;
+	margin: 20px auto;
+}
+
+header {
+     background-color: #FFF;
+     border-radius: 5px;
+     padding: 10px;
+     margin: 10px 0px;
+     width: 99%;
+     position: relative;
+}
+
+#sidebar {
+     float: left;
+     background-color: #FFF;
+     border-radius: 5px;
+     padding: 10px;
+     margin: 10px 20px 0px 0px;
+     width: 15%;
+     height: 340px;
+}
+
+#sidebar a {
+     display: block;
+     height: 30px;
+     padding-top: 7px;
+     padding-left: 5px;
+     margin: 3px 0px;
+     background-color: #DDD;
+     text-decoration: none;
+     font-size: 14px;
+     color: black;
+}
+#sidebar a:hover {
+     background-color: #33FF00;
+}
+#sidebar a:visited {
+     color: black;
+}
+
+
+div#content {
+     float: left;
+     width: 82%;
+}
+
+section {
+     height: 100px;
+     background-color: #fff;
+     border-radius: 5px;
+     padding: 10px;
+     margin: 10px 0px;
+}
+
+h1#title {
+     float: left;
+     font-size: 72px;
+     width: 200px;
+}
+div#extra {
+     width: 220px;
+     float: right;
+     margin-top: 25px;
+}
+div#extra h1 {
+     font-size: 14px;
+     font-weight: bold;
+}
+div#extra a {
+     line-height: 1.5;
+}
+
+section h1 {
+     font-size: 18px;
+}
+
+section#output {
+     height: 400px;
+}
+
+input[type=text] {
+     width: 120px;
+}
+
+input[type=button] {
+     width: 120px;
+     margin-bottom: 30px;
+}
+
+h3 {
+    font-size: 14px;
+    font-weight: bold;
+}
+p {
+    margin: 5px 0px;
+}
+
+footer {
+
+}
+
+/******************************************
+/* D3 Styles                  
+/*******************************************/
+
+.node circle {
+  fill: #fff;
+  stroke: steelblue;
+  stroke-width: 1.5px;
+}
+
+.node {
+  font: 10px sans-serif;
+}
+
+.link {
+  fill: none;
+  stroke: #ccc;
+  stroke-width: 1.5px;
+}
+
+

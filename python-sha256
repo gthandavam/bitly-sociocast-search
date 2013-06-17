@@ -1,0 +1,18 @@
+python-sha256
+import hashlib
+m = hashlib.sha256()
+m.update(“ Content for which sha256 has to be generated”)
+This_is_what_you_need = m.hexdigest()
+
+
+
+apikey=Gm0JmWyvo4FVldPEImUfak9y&apisecret=AXa0PgIsxJ1gef0KBtlOtyIo9VPTUgUQjJjXkAdP&ts=137131400140
+Signature: 
+f512f3b97a60b5b77b1149ace32b652073d140106dbf655714527e0c9f895eb2
+
+Timestamp:
+
+import time
+
+ ts = str(int(time.time))
+ 
